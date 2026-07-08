@@ -1,13 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 st.set_page_config(
     page_title="AI-Powered Diabetes Classification",
     page_icon="🩺",
     layout="wide"
 )
 # Load trained model
-model = joblib.load("../model/diabetes_model.pkl")
+MODEL_PATH = Path(__file__).parent.parent / "model" / "diabetes_model.pkl"
+model = joblib.load(MODEL_PATH)
 with st.sidebar:
     st.header("📊 Project Information")
 

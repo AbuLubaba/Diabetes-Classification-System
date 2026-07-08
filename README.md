@@ -27,9 +27,14 @@ This project predicts whether a patient is likely to have diabetes using Machine
 
 ```bash
 pip install -r requirements.txt
-py train_model.py
-py -m streamlit run data/app.py
+python train_model.py
+streamlit run data/app.py
 ```
+## Live Demo
 
+https://diabetes-classification-system-3u7w3jaml8pjgv2c6b2ktj.streamlit.app
+## GitHub Repository
+
+https://github.com/AbuLubaba/Diabetes-Classification-System
 ## Author
 Abu Lubaba
